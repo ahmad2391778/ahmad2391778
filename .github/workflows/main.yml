@@ -1,0 +1,32 @@
+name: Generate Snake Animation 🐍
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"  # обновление каждые 12 часов
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Generate snake.svg
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Snake (Dark Minimal)
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ahmad2391778
+          outputs: dist/snake.svg
+          color_snake: white
+          color_dots: black
+          background: "#0d1117"
+
+      - name: Push generated snake.svg
+        uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_br_
