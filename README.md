@@ -55,52 +55,63 @@
 
 ## 🚀 Проекты
 
-<!-- тонкая анимированная линия -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
 
-<div align="center">
+<div align="center" style="animation: fadeIn 2s ease-in-out;">
+  <style>
+    .proj-card {
+      transition: all 0.3s ease-in-out;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      overflow: hidden;
+      display: inline-block;
+      margin: 16px;
+      background: #0A0A0A;
+    }
+    .proj-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 0 30px rgba(255,255,255,0.2);
+    }
+  </style>
 
-<!-- 1) Portfolio Website -->
-<a href="https://github.com/ahmad2391778/portfolio">
-  <img alt="Portfolio Website"
-       src="https://socialify.git.ci/ahmad2391778/portfolio/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Plus&theme=Dark"
-       width="780" />
-</a>
-<br/>
-<img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=FFFFFF&style=for-the-badge"/>
-<img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
-<br/><br/>
+  <!-- Portfolio Website -->
+  <div class="proj-card">
+    <a href="https://github.com/ahmad2391778/portfolio">
+      <img src="./portfolio-preview.png?v=3" alt="Portfolio Website" width="780"/>
+    </a>
+    <br/>
+    <img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=FFFFFF&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
+  </div>
 
-<!-- 2) Node API -->
-<a href="https://github.com/ahmad2391778/node-api">
-  <img alt="Node API"
-       src="https://socialify.git.ci/ahmad2391778/node-api/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Floating%20Cogs&theme=Dark"
-       width="780" />
-</a>
-<br/>
-<img src="https://img.shields.io/badge/Node.js-000000?logo=nodedotjs&logoColor=FFFFFF&style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=FFFFFF&style=for-the-badge"/>
-<br/><br/>
+  <!-- Node API -->
+  <div class="proj-card">
+    <a href="https://github.com/ahmad2391778/node-api">
+      <img src="./node-api.png?v=3" alt="Node API" width="780"/>
+    </a>
+    <br/>
+    <img src="https://img.shields.io/badge/Node.js-000000?logo=nodedotjs&logoColor=FFFFFF&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=FFFFFF&style=for-the-badge"/>
+  </div>
 
-<!-- 3) Design Gallery -->
-<a href="https://github.com/ahmad2391778/design-gallery">
-  <img alt="Design Gallery"
-       src="https://socialify.git.ci/ahmad2391778/design-gallery/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Signal&theme=Dark"
-       width="780" />
-</a>
-<br/>
-<img src="https://img.shields.io/badge/HTML-000000?logo=html5&logoColor=FFFFFF&style=for-the-badge"/>
-<img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
-<img src="https://img.shields.io/badge/Photoshop-000000?logo=adobephotoshop&logoColor=FFFFFF&style=for-the-badge"/>
-
+  <!-- Design Gallery -->
+  <div class="proj-card">
+    <a href="https://github.com/ahmad2391778/design-gallery">
+      <img src="./design-gallery.png?v=3" alt="Design Gallery" width="780"/>
+    </a>
+    <br/>
+    <img src="https://img.shields.io/badge/HTML-000000?logo=html5&logoColor=FFFFFF&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
+    <img src="https://img.shields.io/badge/Photoshop-000000?logo=adobephotoshop&logoColor=FFFFFF&style=for-the-badge"/>
+  </div>
 </div>
 
-<!-- низкий разделитель -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
+
 
 
 </details>
