@@ -3,37 +3,29 @@ name: Generate Snake Animation 🐍
 on:
   schedule:
     - cron: "0 */12 * * *"   # обновление каждые 12 часов
-  workflow_dispatch:         # запуск вручную из Actions
+  workflow_dispatch:         # запуск вручную
   push:
-    branches: [ main ]       # на всякий случай — при пуше в main
+    branches: [ main ]       # при пуше в main
 
 permissions:
-  contents: write            # нужно, чтобы пушить в ветку output
+  contents: write            # даёт доступ к пушу в output
 
 jobs:
   build:
+    name: Generate Snake
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Генерируем сразу 2 SVG: тёмную и светлую
-      - name: Generate Snake (mono dark & light)
-        uses: Platane/snk/svg-only@v3
+      - name: Generate Snake SVG
+        uses: Platane/snk@v3
         with:
           github_user_name: ahmad2391778
-          outputs: |
-            dist/snake-dark.svg
-            dist/snake-light.svg
-          # монохромные цвета
-          color_snake: "#e6e6e6"
-          color_head:  "#ffffff"
-          color_dots:  "#0d1117"
-          color_empty: "#ffffff10"
-          background:  "#0d1117"
+          outputs: dist/snake.svg
 
-      - name: Publish to output branch
+      - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
