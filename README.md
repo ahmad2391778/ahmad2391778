@@ -54,18 +54,54 @@
 </p>
 
 ## 🚀 Проекты
-| Проект | Что это | Стек |
-|---|---|---|
-| 🌐 [Portfolio Website](https://github.com/ahmad2391778/portfolio) | Сайт-портфолио с анимациями | React, CSS |
-| ⚙️ [Node API](https://github.com/ahmad2391778/node-api) | REST API с документацией | Node.js, Express |
-| 🎨 [Design Gallery](https://github.com/ahmad2391778/design-gallery) | Галерея дизайнов | HTML, CSS, Photoshop |
 
-<details>
-<summary><b>➕ Ещё проекты</b></summary>
+<!-- тонкая анимированная линия -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+</p>
 
-- 📝 **Notes App** — CRUD-заметки (React + Express)  
-- 🖼️ **Image Tools** — фильтры/ресайз (Node + Canvas)  
-- 🎮 **Mini Games** — игры на чистом JS  
+<div align="center">
+
+<!-- 1) Portfolio Website -->
+<a href="https://github.com/ahmad2391778/portfolio">
+  <img alt="Portfolio Website"
+       src="https://socialify.git.ci/ahmad2391778/portfolio/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Plus&theme=Dark"
+       width="780" />
+</a>
+<br/>
+<img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=FFFFFF&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
+<br/><br/>
+
+<!-- 2) Node API -->
+<a href="https://github.com/ahmad2391778/node-api">
+  <img alt="Node API"
+       src="https://socialify.git.ci/ahmad2391778/node-api/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Floating%20Cogs&theme=Dark"
+       width="780" />
+</a>
+<br/>
+<img src="https://img.shields.io/badge/Node.js-000000?logo=nodedotjs&logoColor=FFFFFF&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=FFFFFF&style=for-the-badge"/>
+<br/><br/>
+
+<!-- 3) Design Gallery -->
+<a href="https://github.com/ahmad2391778/design-gallery">
+  <img alt="Design Gallery"
+       src="https://socialify.git.ci/ahmad2391778/design-gallery/image?description=1&font=Inter&language=1&name=1&owner=0&pattern=Signal&theme=Dark"
+       width="780" />
+</a>
+<br/>
+<img src="https://img.shields.io/badge/HTML-000000?logo=html5&logoColor=FFFFFF&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Photoshop-000000?logo=adobephotoshop&logoColor=FFFFFF&style=for-the-badge"/>
+
+</div>
+
+<!-- низкий разделитель -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+</p>
+
 
 </details>
 
