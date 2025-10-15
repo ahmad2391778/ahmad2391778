@@ -3,29 +3,60 @@ name: Generate Snake Animation 🐍
 on:
   schedule:
     - cron: "0 */12 * * *"   # обновление каждые 12 часов
-  workflow_dispatch:         # запуск вручную
+  workflow_dispatch:
   push:
-    branches: [ main ]       # при пуше в main
+    branches: [ main ]
 
 permissions:
-  contents: write            # даёт доступ к пушу в output
+  contents: write
 
 jobs:
   build:
-    name: Generate Snake
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Generate Snake SVG
-        uses: Platane/snk@v3
+      # Генерим обычную змейку (как сейчас)
+      - name: Generate snake.svg
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ahmad2391778
           outputs: dist/snake.svg
 
-      - name: Push to output branch
+      # Делаем glow-версию (неоновое свечение, монохром)
+      - name: Make neon glow variant
+        run: |
+          python3 - << 'PY'
+          import re, io, sys
+          p = 'dist/snake.svg'
+          s = open(p,'r',encoding='utf-8').read()
+
+          # Вставляем фильтр "glow" и включаем его на всём SVG
+          s = re.sub(
+              r'<svg([^>]*)>',
+              r'<svg\1 style="filter:url(#glow)">\n  <defs>\n'
+              r'    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">\n'
+              r'      <feGaussianBlur stdDeviation="2.4" result="blur"/>\n'
+              r'      <feMerge>\n'
+              r'        <feMergeNode in="blur"/>\n'
+              r'        <feMergeNode in="SourceGraphic"/>\n'
+              r'      </feMerge>\n'
+              r'    </filter>\n'
+              r'  </defs>',
+              s, count=1
+          )
+
+          # Нежный моно-стиль: приглушаем яркие цвета (если вдруг есть)
+          # Заменяем часто встречающиеся фиолет/зелёный на белый/серый
+          s = s.replace('#40c463', '#cfd8dc')   # food → светло-серый
+          s = s.replace('#7f3fbf', '#ffffff')   # snake body → белый (вариант 1)
+          s = s.replace('#6b21a8', '#ffffff')   # snake body → белый (вариант 2)
+
+          open('dist/snake-neon.svg','w',encoding='utf-8').write(s)
+          PY
+
+      - name: Publish to output branch
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
