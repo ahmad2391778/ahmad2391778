@@ -1,16 +1,12 @@
-<!-- ============ BLACK–WHITE PRO for @ahmad2391778 ============ -->
 
-<!-- Monochrome waving banner -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=160&text=Ahmad%20Abdukayumov&fontColor=FFFFFF&fontAlignY=35&fontSize=48&animation=twinkling"/>
 </p>
 
-<!-- Typing intro (white text) -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&pause=1200&color=FFFFFF&center=true&vCenter=true&width=900&lines=Full-Stack+Developer%20%7C%20Designer;React%20%2B%20Node.js;Clean%20Code%20%E2%80%A2%20Fast%20UX%20%E2%80%A2%20Minimal%20Vibes" />
 </p>
 
-<!-- Monochrome social badges -->
 <p align="center">
   <a href="https://t.me/Ahmad_Abdukayumov"><img src="https://img.shields.io/badge/Telegram-000000?style=for-the-badge&logo=telegram&logoColor=FFFFFF"></a>
   <a href="https://www.instagram.com/abdukayumov_ahmad_?igsh=d2R1amt6cjRnNW1v&utm_source=qr"><img src="https://img.shields.io/badge/Instagram-000000?style=for-the-badge&logo=instagram&logoColor=FFFFFF"></a>
@@ -21,11 +17,9 @@
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ahmad2391778&style=flat-square&label=VIEWS&color=000000" />
   <img src="https://img.shields.io/badge/Open%20to%20collab-YES-000000?style=flat-square&logo=handshake&logoColor=FFFFFF" />
-  <!-- tiny accent dot (muted red, can be removed) -->
   <img src="https://img.shields.io/badge/%E2%97%8F-accent-1a1a1a?labelColor=0A0A0A&color=ff3b3b&style=flat-square">
 </p>
 
-<!-- Thin divider -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
@@ -51,7 +45,6 @@
 
 ## 🎮 CS2 / Steam
 <p align="center">
-  <!-- ЗАГРУЗИ скриншот как cs2.png в корень репозитория -->
   <img src="./cs2.png" alt="CS2 stats" width="720"/>
 </p>
 <p align="center">
@@ -78,7 +71,6 @@
 
 ## 📊 Статистика (моно)
 <p align="center">
-  <!-- прозрачный фон, белые заголовки/иконки, чёрно-белая палитра -->
   <img height="160" src="https://github-readme-stats.vercel.app/api?username=ahmad2391778&show_icons=true&hide_border=true&theme=transparent&title_color=FFFFFF&text_color=FFFFFF&icon_color=FFFFFF" />
   <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmad2391778&layout=compact&hide_border=true&theme=transparent&title_color=FFFFFF&text_color=FFFFFF" />
 </p>
@@ -87,12 +79,10 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ahmad2391778&hide_border=true&background=FFFFFF00&ring=FFFFFF&fire=CCCCCC&currStreakLabel=FFFFFF&sideNums=FFFFFF&sideLabels=FFFFFF&dates=AAAAAA" />
 </p>
 
-<!-- Activity graph (grayscale-like) -->
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ahmad2391778&bg_color=0d1117&color=FFFFFF&line=CCCCCC&point=FFFFFF&area=true&area_color=FFFFFF11&hide_border=true" />
 </p>
 
-<!-- Trophy wall (borderless, monochrome-ish) -->
 <p align="center">
   <img src="https://github-profile-trophy.vercel.app/?username=ahmad2391778&no-frame=true&no-bg=true&theme=onedark&column=6&margin-w=8" />
 </p>
@@ -103,7 +93,6 @@
 
 ## 🐍 Contribution Snake (mono)
 <p align="center">
-  <!-- появится после GitHub Action с Platane/snk -->
   <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake.svg" alt="Snake animation" />
 </p>
 
@@ -111,7 +100,6 @@
 - Изучаю: **React Hooks**, **Next.js**, **TypeScript**  
 - Цели: **аутентификация**, **деплой (Vercel/Render)**, **3 кейса/статьи**
 
-<!-- Footer -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
@@ -119,8 +107,4 @@
   <sub>Made with ⚫⚪ minimalism.</sub>
 </p>
 
-## 🐍 GitHub Snake Animation
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake.svg" alt="snake animation" />
-</p>
 
