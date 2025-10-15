@@ -53,64 +53,138 @@
   <img src="https://img.shields.io/badge/Win%20Rate-57%25-0A0A0A?style=for-the-badge&labelColor=000000&logoColor=FFFFFF">
 </p>
 
+<!-- Анимированный подзаголовок -->
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&pause=1200&color=FFFFFF&center=true&vCenter=true&width=720&lines=Selected+Projects+%E2%80%A2+Fast+UX+%E2%80%A2+Clean+Code+%E2%80%A2+No+photos+needed" alt="typing"/>
+</p>
+
+<!-- Тонкая “неоновая” линия -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+</p>
 ## 🚀 Проекты
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+  <a href="https://github.com/ahmad2391778/portfolio">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmad2391778&repo=portfolio&theme=transparent&hide_border=true&title_color=FFFFFF&text_color=AAAAAA&icon_color=FFFFFF" />
+  </a>
+  <a href="https://github.com/ahmad2391778/node-api">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmad2391778&repo=node-api&theme=transparent&hide_border=true&title_color=FFFFFF&text_color=AAAAAA&icon_color=FFFFFF" />
+  </a>
 </p>
 
-<div align="center" style="animation: fadeIn 2s ease-in-out;">
-  <style>
-    .proj-card {
-      transition: all 0.3s ease-in-out;
-      border-radius: 16px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
-      overflow: hidden;
-      display: inline-block;
-      margin: 16px;
-      background: #0A0A0A;
-    }
-    .proj-card:hover {
-      transform: translateY(-4px) scale(1.02);
-      box-shadow: 0 0 30px rgba(255,255,255,0.2);
-    }
-  </style>
+<p align="center">
+  <a href="https://github.com/ahmad2391778/design-gallery">
+    <img width="48%" src="https://github-readme-stats.vercel.app/api/pin/?username=ahmad2391778&repo=design-gallery&theme=transparent&hide_border=true&title_color=FFFFFF&text_color=AAAAAA&icon_color=FFFFFF" />
+  </a>
+</p>
 
-  <!-- Portfolio Website -->
-  <div class="proj-card">
-    <a href="https://github.com/ahmad2391778/portfolio">
-      <img src="./portfolio-preview.png?v=3" alt="Portfolio Website" width="780"/>
-    </a>
-    <br/>
-    <img src="https://img.shields.io/badge/React-000000?logo=react&logoColor=FFFFFF&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
-  </div>
+<!-- “чипсы” со стеком — монохром -->
+<p align="center">
+  <a href="https://github.com/ahmad2391778/portfolio">
+    <img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=FFFFFF"/>
+    <img src="https://img.shields.io/badge/CSS-000000?style=flat-square&logo=css3&logoColor=FFFFFF"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/ahmad2391778/node-api">
+    <img src="https://img.shields.io/badge/Node.js-000000?style=flat-square&logo=nodedotjs&logoColor=FFFFFF"/>
+    <img src="https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=FFFFFF"/>
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://github.com/ahmad2391778/design-gallery">
+    <img src="https://img.shields.io/badge/HTML-000000?style=flat-square&logo=html5&logoColor=FFFFFF"/>
+    <img src="https://img.shields.io/badge/CSS-000000?style=flat-square&logo=css3&logoColor=FFFFFF"/>
+    <img src="https://img.shields.io/badge/Photoshop-000000?style=flat-square&logo=adobephotoshop&logoColor=FFFFFF"/>
+  </a>
+</p>
 
-  <!-- Node API -->
-  <div class="proj-card">
-    <a href="https://github.com/ahmad2391778/node-api">
-      <img src="./node-api.png?v=3" alt="Node API" width="780"/>
-    </a>
-    <br/>
-    <img src="https://img.shields.io/badge/Node.js-000000?logo=nodedotjs&logoColor=FFFFFF&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Express-000000?logo=express&logoColor=FFFFFF&style=for-the-badge"/>
-  </div>
+<details>
+  <summary><b>➕ Ещё проекты</b></summary>
 
-  <!-- Design Gallery -->
-  <div class="proj-card">
-    <a href="https://github.com/ahmad2391778/design-gallery">
-      <img src="./design-gallery.png?v=3" alt="Design Gallery" width="780"/>
-    </a>
-    <br/>
-    <img src="https://img.shields.io/badge/HTML-000000?logo=html5&logoColor=FFFFFF&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/CSS-000000?logo=css3&logoColor=FFFFFF&style=for-the-badge"/>
-    <img src="https://img.shields.io/badge/Photoshop-000000?logo=adobephotoshop&logoColor=FFFFFF&style=for-the-badge"/>
-  </div>
-</div>
+- 📝 Notes App — React + Express  
+- 🖼 Image Tools — Node + Canvas  
+- 🎮 Mini Games — JS  
+
+</details>
+
+<!-- Разделитель -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+</p>
+## 🚀 Проекты (таблица)
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&pause=2000&color=FFFFFF&center=true&vCenter=true&width=420&lines=Clean+%E2%80%A2+Minimal+%E2%80%A2+Monochrome" alt="typing-mini"/>
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Проект</th>
+      <th>Что это</th>
+      <th>Стек</th>
+      <th>Ссылки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>🌐 <a href="https://github.com/ahmad2391778/portfolio">Portfolio Website</a></td>
+      <td>Сайт-портфолио с анимациями</td>
+      <td>React, CSS</td>
+      <td>
+        <a href="https://github.com/ahmad2391778/portfolio">
+          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>⚙️ <a href="https://github.com/ahmad2391778/node-api">Node API</a></td>
+      <td>REST API с документацией</td>
+      <td>Node.js, Express</td>
+      <td>
+        <a href="https://github.com/ahmad2391778/node-api">
+          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
+        </a>
+        <a href="#">
+          <img src="https://img.shields.io/badge/Docs-000000?style=flat-square&logo=swagger&logoColor=FFFFFF" />
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td>🎨 <a href="https://github.com/ahmad2391778/design-gallery">Design Gallery</a></td>
+      <td>Галерея дизайнов</td>
+      <td>HTML, CSS, Photoshop</td>
+      <td>
+        <a href="https://github.com/ahmad2391778/design-gallery">
+          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
+<p align="center">
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ahmad2391778&theme=react-dark&hide_border=true" />
+  </a>
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ahmad2391778&theme=radical&hide_border=true" />
+</p>
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmad2391778&layout=compact&hide_border=true&theme=radical" />
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-contrast.svg?v=2" alt="snake animation" />
+  </picture>
+</p>
+
 
 
 
