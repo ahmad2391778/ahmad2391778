@@ -118,3 +118,9 @@
 <p align="center">
   <sub>Made with ⚫⚪ minimalism.</sub>
 </p>
+
+## 🐍 GitHub Snake Animation
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake.svg" alt="snake animation" />
+</p>
+
