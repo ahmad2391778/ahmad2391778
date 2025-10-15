@@ -60,7 +60,7 @@
 </p>
 
 
-🚀 Проекты
+## 🚀 Проекты
 
 <p align="center">
   <a href="https://github.com/ahmad2391778/portfolio">
@@ -77,7 +77,6 @@
   </a>
 </p>
 
-<!-- “чипсы” со стеком — монохром -->
 <p align="center">
   <a href="https://github.com/ahmad2391778/portfolio">
     <img src="https://img.shields.io/badge/React-000000?style=flat-square&logo=react&logoColor=FFFFFF"/>
@@ -140,7 +139,7 @@
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" />
 </p>
 
-ъ## 🐍 GitHub Snake Animation
+## 🐍 GitHub Snake Animation
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg?v=2">
