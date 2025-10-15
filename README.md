@@ -3,9 +3,15 @@
   <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=160&text=Ahmad%20Abdukayumov&fontColor=FFFFFF&fontAlignY=35&fontSize=48&animation=twinkling"/>
 </p>
 
+
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=22&pause=1200&color=FFFFFF&center=true&vCenter=true&width=900&lines=Full-Stack+Developer%20%7C%20Designer;React%20%2B%20Node.js;Clean%20Code%20%E2%80%A2%20Fast%20UX%20%E2%80%A2%20Minimal%20Vibes" />
 </p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&height=80&color=000000&section=footer"/>
+</p>
+
 
 <p align="center">
   <a href="https://t.me/Ahmad_Abdukayumov"><img src="https://img.shields.io/badge/Telegram-000000?style=for-the-badge&logo=telegram&logoColor=FFFFFF"></a>
@@ -95,8 +101,8 @@
 
 - 📝 Notes App — React + Express  
 - 🖼 Image Tools — Node + Canvas  
-- 🎮 Mini Games — JS  
-
+- 🎮 Mini Games — JS
+- 
 </details>
 
 <p align="center">
@@ -106,6 +112,11 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nodejs,python,github,git,linux,vscode,figma&perline=6" />
+</p>
+
 
 ## 📊 Статистика (моно)
 <p align="center">
@@ -146,9 +157,6 @@
 
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+  <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=14&pause=2000&color=AAAAAA&center=true&vCenter=true&width=400&lines=Made+with+%F0%9F%92%9C+by+Ahmad2391778;Thanks+for+visiting!"/>
 </p>
-<p align="center">
-  <sub>Made with ⚫⚪ minimalism.</sub>
-</p>
-
-
