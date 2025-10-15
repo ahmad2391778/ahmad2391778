@@ -91,10 +91,15 @@
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" />
 </p>
 
-## 🐍 Contribution Snake (mono)
+## 🐍 GitHub Snake Animation
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake.svg" alt="Snake animation" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-light.svg">
+    <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-contrast.svg" alt="snake animation" />
+  </picture>
 </p>
+
 
 ## 📚 Учусь и цели
 - Изучаю: **React Hooks**, **Next.js**, **TypeScript**  
