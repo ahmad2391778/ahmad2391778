@@ -53,14 +53,8 @@
   <img src="https://img.shields.io/badge/Win%20Rate-57%25-0A0A0A?style=for-the-badge&labelColor=000000&logoColor=FFFFFF">
 </p>
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&pause=1200&color=FFFFFF&center=true&vCenter=true&width=720&lines=Selected+Projects+%E2%80%A2+Fast+UX+%E2%80%A2+Clean+Code+%E2%80%A2+No+photos+needed" alt="typing"/>
-</p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
-</p>
-## 🚀 Проекты
+🚀 Проекты
 
 <p align="center">
   <a href="https://github.com/ahmad2391778/portfolio">
@@ -105,7 +99,13 @@
 
 </details>
 
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&pause=1200&color=FFFFFF&center=true&vCenter=true&width=720&lines=Selected+Projects+%E2%80%A2+Fast+UX+%E2%80%A2+Clean+Code+%E2%80%A2+No+photos+needed" alt="typing"/>
+</p>
 
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
+</p>
 
 ## 📊 Статистика (моно)
 <p align="center">
