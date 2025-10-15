@@ -2,10 +2,10 @@ name: Generate Snake Animation 🐍
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # обновление каждые 12 часов
-  workflow_dispatch:
+    - cron: "0 */12 * * *"       # обновление каждые 12 часов
+  workflow_dispatch:               # ручной запуск
   push:
-    branches: [ main ]
+    branches: [ main ]             # и при пуше в main
 
 permissions:
   contents: write
@@ -13,47 +13,89 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # Генерим обычную змейку (как сейчас)
-      - name: Generate snake.svg
+      # Базовый SVG от Platane/snk
+      - name: Generate base snake
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ahmad2391778
-          outputs: dist/snake.svg
+          outputs: dist/snake-base.svg
 
-      # Делаем glow-версию (неоновое свечение, монохром)
-      - name: Make neon glow variant
+      # Пост-обработка: делаем 4 версии (neon / dark / light / contrast)
+      - name: Post-process to neon/dark/light/contrast
         run: |
           python3 - << 'PY'
-          import re, io, sys
-          p = 'dist/snake.svg'
-          s = open(p,'r',encoding='utf-8').read()
+          import re, pathlib
+          p = pathlib.Path("dist/snake-base.svg")
+          s = p.read_text(encoding="utf-8")
 
-          # Вставляем фильтр "glow" и включаем его на всём SVG
-          s = re.sub(
-              r'<svg([^>]*)>',
-              r'<svg\1 style="filter:url(#glow)">\n  <defs>\n'
-              r'    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">\n'
-              r'      <feGaussianBlur stdDeviation="2.4" result="blur"/>\n'
-              r'      <feMerge>\n'
-              r'        <feMergeNode in="blur"/>\n'
-              r'        <feMergeNode in="SourceGraphic"/>\n'
-              r'      </feMerge>\n'
-              r'    </filter>\n'
-              r'  </defs>',
-              s, count=1
-          )
+          # Универсальный инжект: <defs> c glow и стилями
+          def inject(svg, *, bg=None, snake="#ffffff", grid="#cfd8dc", food="#b0f2b4", outline="#ffffff", glow="#a6fffa"):
+              # фон: либо прозрачный (None), либо цвет
+              if bg is None:
+                  svg = re.sub(r'(<svg[^>]+)>', r'\1 style="background:transparent">', svg, count=1)
+              else:
+                  svg = re.sub(r'(<svg[^>]+)>', fr'\1 style="background:{bg}">', svg, count=1)
 
-          # Нежный моно-стиль: приглушаем яркие цвета (если вдруг есть)
-          # Заменяем часто встречающиеся фиолет/зелёный на белый/серый
-          s = s.replace('#40c463', '#cfd8dc')   # food → светло-серый
-          s = s.replace('#7f3fbf', '#ffffff')   # snake body → белый (вариант 1)
-          s = s.replace('#6b21a8', '#ffffff')   # snake body → белый (вариант 2)
+              # <defs> с glow и CSS (пульсация, контур)
+              defs = f'''
+              <defs>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="2.8" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+                <style>
+                  /* лёгкая пульсация свечения */
+                  @keyframes pulse {{ 0%{{opacity:.9}} 50%{{opacity:.6}} 100%{{opacity:.9}} }}
+                  svg {{ image-rendering: optimizeQuality; }}
+                  /* сетка contributions */
+                  rect[fill="#ebedf0"] {{ fill: {grid}; }}
+                  /* "еда" (точки цели) */
+                  rect[fill="#40c463"] {{ fill: {food}; }}
+                  /* тело змейки: делаем белым/чёрным; добавляем контур */
+                  rect[fill="#7f3fbf"], rect[fill="#6b21a8"], rect[fill="#8a2be2"] {{
+                    fill: {snake};
+                    stroke: {outline};
+                    stroke-width: .6;
+                    shape-rendering: geometricPrecision;
+                    filter: url(#glow);
+                    animation: pulse 3.6s ease-in-out infinite;
+                    rx: 2; ry: 2; /* слегка скруглим углы */
+                  }}
+                </style>
+              </defs>'''
+              svg = svg.replace("<svg", "<svg")
+              svg = re.sub(r'(<svg[^>]*>)', r'\1' + defs, svg, count=1)
+              return svg
 
-          open('dist/snake-neon.svg','w',encoding='utf-8').write(s)
+              # Примечание: заменяем распространённые цвета оригинала:
+          # Нормализуем возможные варианты цветов у исходного SVG
+          s_norm = (s
+            .replace("#40c463", "#40c463")   # food (как маркер для замены)
+            .replace("#7f3fbf", "#7f3fbf")   # body фиолет
+            .replace("#6b21a8", "#6b21a8")   # body альтернативный
+            .replace("#ebedf0", "#ebedf0"))  # grid серый
+
+          # 1) NEON (прозрачный фон, идеально в ч/б-стиль профиля)
+          neon   = inject(s_norm, bg=None,             snake="#ffffff", grid="#3a3a3a", food="#98e2a1", outline="#ffffff", glow="#b7ffff")
+          # 2) DARK (тёмный фон GitHub)
+          dark   = inject(s_norm, bg="#0d1117",        snake="#ffffff", grid="#2a2f3a", food="#98e2a1", outline="#ffffff")
+          # 3) LIGHT (светлая тема)
+          light  = inject(s_norm, bg="#ffffff",        snake="#111111", grid="#dfe4e7", food="#90d59b", outline="#111111")
+          # 4) CONTRAST (контрастная ч/б)
+          high   = inject(s_norm, bg="#000000",        snake="#f5f5f5", grid="#4a4a4a", food="#b9f2bd", outline="#f5f5f5")
+
+          pathlib.Path("dist/snake-neon.svg").write_text(neon,  encoding="utf-8")
+          pathlib.Path("dist/snake-dark.svg").write_text(dark,  encoding="utf-8")
+          pathlib.Path("dist/snake-light.svg").write_text(light, encoding="utf-8")
+          pathlib.Path("dist/snake-contrast.svg").write_text(high, encoding="utf-8")
           PY
 
       - name: Publish to output branch
