@@ -53,12 +53,10 @@
   <img src="https://img.shields.io/badge/Win%20Rate-57%25-0A0A0A?style=for-the-badge&labelColor=000000&logoColor=FFFFFF">
 </p>
 
-<!-- Анимированный подзаголовок -->
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=18&pause=1200&color=FFFFFF&center=true&vCenter=true&width=720&lines=Selected+Projects+%E2%80%A2+Fast+UX+%E2%80%A2+Clean+Code+%E2%80%A2+No+photos+needed" alt="typing"/>
 </p>
 
-<!-- Тонкая “неоновая” линия -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
 </p>
@@ -107,88 +105,7 @@
 
 </details>
 
-<!-- Разделитель -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
-</p>
-## 🚀 Проекты (таблица)
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=14&pause=2000&color=FFFFFF&center=true&vCenter=true&width=420&lines=Clean+%E2%80%A2+Minimal+%E2%80%A2+Monochrome" alt="typing-mini"/>
-</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Проект</th>
-      <th>Что это</th>
-      <th>Стек</th>
-      <th>Ссылки</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>🌐 <a href="https://github.com/ahmad2391778/portfolio">Portfolio Website</a></td>
-      <td>Сайт-портфолио с анимациями</td>
-      <td>React, CSS</td>
-      <td>
-        <a href="https://github.com/ahmad2391778/portfolio">
-          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>⚙️ <a href="https://github.com/ahmad2391778/node-api">Node API</a></td>
-      <td>REST API с документацией</td>
-      <td>Node.js, Express</td>
-      <td>
-        <a href="https://github.com/ahmad2391778/node-api">
-          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
-        </a>
-        <a href="#">
-          <img src="https://img.shields.io/badge/Docs-000000?style=flat-square&logo=swagger&logoColor=FFFFFF" />
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td>🎨 <a href="https://github.com/ahmad2391778/design-gallery">Design Gallery</a></td>
-      <td>Галерея дизайнов</td>
-      <td>HTML, CSS, Photoshop</td>
-      <td>
-        <a href="https://github.com/ahmad2391778/design-gallery">
-          <img src="https://img.shields.io/badge/Repo-000000?style=flat-square&logo=github&logoColor=FFFFFF" />
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2"/>
-</p>
-<p align="center">
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=ahmad2391778&theme=react-dark&hide_border=true" />
-  </a>
-</p>
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ahmad2391778&theme=radical&hide_border=true" />
-</p>
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ahmad2391778&layout=compact&hide_border=true&theme=radical" />
-</p>
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-light.svg?v=2">
-    <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-contrast.svg?v=2" alt="snake animation" />
-  </picture>
-</p>
-
-
-
-
-</details>
 
 ## 📊 Статистика (моно)
 <p align="center">
