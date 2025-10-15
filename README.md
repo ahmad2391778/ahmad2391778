@@ -91,14 +91,15 @@
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=dark" />
 </p>
 
-## 🐍 GitHub Snake Animation
+ъ## 🐍 GitHub Snake Animation
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-light.svg">
-    <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-contrast.svg" alt="snake animation" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-neon.svg?v=2">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-light.svg?v=2">
+    <img src="https://raw.githubusercontent.com/ahmad2391778/ahmad2391778/output/snake-contrast.svg?v=2" alt="snake animation" />
   </picture>
 </p>
+
 
 
 ## 📚 Учусь и цели
